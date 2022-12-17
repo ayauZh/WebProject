@@ -3,34 +3,38 @@ body {
     font-family: 'proximanova',sans-serif;
     color: #fff;
     background: #000;
+    height: 4000px;
+    /* border-width: 1;
+    border-style: solid;
+    border-color: #e2e8f0; */
 }
 header {
     background-color: rgba(0,0,0,0.7);
     width: 100%;
-    height: 90px;
+    height: 85px;
     display: block;
+    position: fixed;
 }
 .asa {
     margin-right: 7.4%; 
     padding-top: 28px;
     margin-left: 7.4%;
     font-weight: bold;
-    /* border: #fff solid 1px; */
 }
 .znak-news {
-    width: 200px;
+    max-width: 10.7%;
     height: auto;
     position: absolute;
 }
-.zagolovok-slovo{
+.zagolovok-slovo {
     margin-left: 13.5%;
-    margin-top: 2px;
+    margin-top: 0.2%;
     position: absolute;
     cursor: pointer;
 }
 .zagolovok-slovo-1 {
     cursor: pointer;
-    margin-top: 2px;
+    margin-top: 0.2%;
     position: absolute;
     margin-left: 18%;
 }
@@ -38,16 +42,37 @@ header {
     height: 23px;
     width: 23px;
     cursor: pointer;
-    margin-left: 79.4%;
+    margin-left: 80.4%;
     display: block;
     position: absolute;
     margin-top: 2px;
 }
-.menu_znak{
+.menu_znak {
     height: 28px;
     width: 35px;
-    margin-left: 82.5%;
+    margin-left: 83.3%;
     cursor: pointer;
     display: block;
     position: absolute;
+}
+ /* ------------------------------------------------------------------------------- */
+ #div-pod-zogolovok {
+    height: 85px;
+    width: 100%;
+ }
+.glavnaya-novost {
+    width: 100%;
+    height: 750px;
+}
+.glavnaya-kartinka {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+}
+#background-dlya-kartinok{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to right,black 0%,rgba(0,0,0,0) 100%);
 }
