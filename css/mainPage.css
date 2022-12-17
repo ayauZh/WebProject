@@ -3,7 +3,6 @@ body {
     font-family: 'proximanova',sans-serif;
     color: #fff;
     background: #000;
-    height: 4000px;
     /* border-width: 1;
     border-style: solid;
     border-color: #e2e8f0; */
@@ -14,10 +13,11 @@ header {
     height: 85px;
     display: block;
     position: fixed;
+    z-index: 5;
 }
 .asa {
-    margin-right: 7.4%; 
     padding-top: 28px;
+    margin-right: 7.4%;
     margin-left: 7.4%;
     font-weight: bold;
 }
@@ -68,11 +68,78 @@ header {
     max-width: 100%;
     height: auto;
     position: absolute;
+    display: block;
 }
 #background-dlya-kartinok{
     width: 100%;
-    height: 100%;
-    position: relative;
+    height: 750px;
+    position: absolute;
     z-index: 1;
     background: linear-gradient(to right,black 0%,rgba(0,0,0,0) 100%);
+}
+.osnovnyie-zagolovoki {
+    margin-left: 7.4%;
+    margin-top: 14%;
+    position: absolute;
+    z-index: 2;
+}
+.h1-zogolovok {
+    font-size: 29px;
+    width: 60%;
+}
+.slovo-i-ssylki {
+    opacity: 0.43;
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 1.7%;
+    cursor: pointer;
+}
+.slovo-i-ssylki:hover {
+    opacity: 1;
+}
+.video-na-zagolovke {
+    margin-top: 2.4%;
+    height: 50px;
+    width: 120px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+    background-color: #ff4669;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.ikonka-play {
+    width: 25px;
+    height: 25px;
+    margin-top: 10%;
+    margin-left: 15%;
+    float: left;
+}
+.vremya-video {
+    float: left;
+    margin-top: 13%;
+    margin-left: 12%;
+}
+.video-na-zagolovke:hover {
+    background-color: #565657;
+}
+/* .chetyri-elementy-4 {
+    display: flex;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+.chetyri-element {
+    height: 70%;
+    max-width: 100%;
+    cursor: pointer;
+    padding-right: 30%;
+} */
+ /* ------------------------------------------------------------------------------- */
+.text-content {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    margin-left: 7.4%;
+    margin-top: 2.5%;
+    max-width: 1210px;
+    color: #e8e8e8;
+    line-height: 1.5;
 }
