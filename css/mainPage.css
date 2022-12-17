@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: 'proximanova',sans-serif;
+    color: #fff;
+    background: #000;
+}
+header {
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 90px;
+    display: block;
+}
+.asa {
+    margin-right: 7.4%; 
+    padding-top: 28px;
+    margin-left: 7.4%;
+    font-weight: bold;
+    /* border: #fff solid 1px; */
+}
+.znak-news {
+    width: 200px;
+    height: auto;
+    position: absolute;
+}
+.zagolovok-slovo{
+    margin-left: 13.5%;
+    margin-top: 2px;
+    position: absolute;
+    cursor: pointer;
+}
+.zagolovok-slovo-1 {
+    cursor: pointer;
+    margin-top: 2px;
+    position: absolute;
+    margin-left: 18%;
+}
+.znak_iskat {
+    height: 23px;
+    width: 23px;
+    cursor: pointer;
+    margin-left: 79.4%;
+    display: block;
+    position: absolute;
+    margin-top: 2px;
+}
+.menu_znak{
+    height: 28px;
+    width: 35px;
+    margin-left: 82.5%;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+}
