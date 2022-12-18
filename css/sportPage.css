@@ -19,6 +19,7 @@ header {
 .asa {
     padding-top: 28px;
     margin-left: 7.4%;
+    margin-right: 7.4%;
     font-weight: bold;
 }
 .znak-news {
@@ -71,6 +72,7 @@ header {
     font-size: 32px;
     font-weight: 700;
     margin-left: 7.4%;
+    margin-right: 7.4%;
     display: flex;
 }
 .nazad-channels {
@@ -83,23 +85,49 @@ header {
 .nazad-channels:hover {
     opacity: 1;
 }
+.follow {
+    margin-left: 80%;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 2rem;
+    background-color: white;
+    color: #1e1e1e;
+    display: flex;
+    border-radius: 0.125rem;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    align-items: center;
+    cursor: pointer;
+}
+#plus {
+    max-width: 25%;
+    padding-left: 4%;
+}
+.follow:hover {
+    opacity: .7;
+}
 /* ------------------------------------------------------------------------------- */
 .novostei-pro-sport {
     margin-left: 7.4%;
+    /* margin-right: 7.4%; */
     margin-top: 20px;
 }
 .kartinki-pro-sport {
     display: flex;
+    margin-bottom: 30px;
 }
 .text-i-kartinka {
     width: 21.6%;
     height: 215px;
-    /* border-width: 1;
-    border-style: solid;
-    border-color: #e2e8f0; */
+    margin-right: 30px;
 }
 .mnogo-kartinki-pro-sport {
-    max-width: 20%;
+    max-width: 20.4%;
     position: absolute;
     cursor: pointer;
 }
