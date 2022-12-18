@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: 'proximanova',sans-serif;
+    color: #fff;
+    background: #000;
+    height: 2000px;
+    /* border-width: 1;
+    border-style: solid;
+    border-color: #e2e8f0; */
+}
+header {
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 85px;
+    display: block;
+    position: fixed;
+    z-index: 5;
+}
+.asa {
+    padding-top: 28px;
+    margin-left: 7.4%;
+    font-weight: bold;
+}
+.znak-news {
+    max-width: 10.7%;
+    height: auto;
+    position: absolute;
+}
+.zagolovok-slovo {
+    margin-left: 13.5%;
+    margin-top: 0.2%;
+    position: absolute;
+    cursor: pointer;
+}
+.zagolovok-slovo:hover {
+    text-decoration: underline;
+}
+.zagolovok-slovo-1 {
+    cursor: pointer;
+    margin-top: 0.2%;
+    position: absolute;
+    margin-left: 18%;
+}
+.zagolovok-slovo-1:hover {
+    text-decoration: underline;
+}
+.znak_iskat {
+    height: 23px;
+    width: 23px;
+    cursor: pointer;
+    margin-left: 80.4%;
+    display: block;
+    position: absolute;
+    margin-top: 2px;
+}
+.menu_znak {
+    height: 28px;
+    width: 35px;
+    margin-left: 83.3%;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+}
+/* ------------------------------------------------------------------------------- */
+#div-pod-zogolovok {
+    height: 85px;
+    width: 100%;
+ }
+.cnannels-sport {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 7.4%;
+    display: flex;
+}
+.nazad-channels {
+    opacity: .5;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    padding-right: 0.5%;
+}
+.nazad-channels:hover {
+    opacity: 1;
+}
+/* ------------------------------------------------------------------------------- */
+.novostei-pro-sport {
+    margin-left: 7.4%;
+    margin-top: 20px;
+}
+.kartinki-pro-sport {
+    display: flex;
+}
+.text-i-kartinka {
+    width: 21.6%;
+    height: 215px;
+    /* border-width: 1;
+    border-style: solid;
+    border-color: #e2e8f0; */
+}
+.mnogo-kartinki-pro-sport {
+    max-width: 20%;
+    position: absolute;
+    cursor: pointer;
+}
+.text-na-kartinke {
+    width: 18%;
+    line-height: 1.25;
+    background: #000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 0.8%;
+    display: inline;
+    cursor: pointer;
+}
+.text-i-kartinka:hover .mnogo-kartinki-pro-sport {
+    opacity: .38;
+    transition:  opacity 200ms linear;
+}
+.text-i-kartinka:hover .text-na-kartinke {
+    color: #fff;
+    background: none;
+    transition:  opacity 200ms linear;
+}
