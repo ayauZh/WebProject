@@ -236,8 +236,8 @@ header {
     position: fixed;
     bottom: 20px;
     right: 10px;
-    height: 14%;
-    width: 4%;
+    height: 8%;
+    width: 5%;
     display: none;
     place-items: center;
     border-radius: 50%;
