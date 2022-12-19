@@ -11,6 +11,9 @@ body {
     border-style: solid;
     border-color: #e2e8f0; */
 }
+a {
+    text-decoration:none;
+}
 header {
     background-color: rgba(0,0,0,0.7);
     width: 100%;
@@ -166,7 +169,7 @@ header {
     border-style: solid;
     border-color: #e2e8f0; */
  }
- .chetyryi-avtorizatsya {
+ .email-i-password {
     height: 46px;
     background-color: #444444;
     border-radius: 2px;
@@ -183,7 +186,7 @@ header {
 input:hover {
     opacity: .7;
 }
-.chetytyi-avtorizatsya:focus {
+.email-i-password:focus {
     background-color: #fff;
     opacity: 1;
     color: #000;
@@ -191,16 +194,47 @@ input:hover {
 ::placeholder { 
     color: #fff;
 }
+.forgot-password {
+    display: block;
+    color: #fff;
+    font-weight: 500;
+    padding-bottom: 3%;
+    
+}
+.forgot-password:hover {
+    text-decoration: underline;
+}
 .submit-account {
     height: 46px;
     background-color: #ff4669;
     border-radius: 2px;
     font-size: 18px;
-    width: 25%;
-    color: white;
+    width: 10%;
+    color: #fff;
     font-weight: 600;
     line-height: 1.2;
     display: block;
+}
+h3 {
+    margin-top: 5%;
+}
+.knopka-create-account {
+    display: block;
+    height: 46px;
+    border-radius: 2px;
+    border: #ff4669 solid 2px;
+    font-size: 18px;
+    width: 20%;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.knopka-create-account div {
+    padding-top: 7%;
+    text-align: center;
+}
+.knopka-create-account:hover {
+    background-color: #ff4669;
 }
 /* --------------------------------------footer----------------------------------------- */
 footer {
