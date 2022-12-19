@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     font-family: 'proximanova',sans-serif;
@@ -15,6 +18,8 @@ header {
     display: block;
     position: fixed;
     z-index: 5;
+    display: flex;
+    flex-direction: column;
 }
 .asa {
     padding-top: 28px;
@@ -35,7 +40,7 @@ header {
 }
 .zagolovok-slovo:hover {
     text-decoration: underline;
-    transition: color .2s linear:
+    transition: color .2s linear;
     color: #ff4669;
 }
 .zagolovok-slovo-1 {
@@ -46,7 +51,7 @@ header {
 }
 .zagolovok-slovo-1:hover {
     text-decoration: underline;
-    transition: color .2s linear:
+    transition: color .2s linear;
     color: #ff4669;
 }
 .znak_iskat {
@@ -59,32 +64,33 @@ header {
     margin-top: 2px;
 }
 .menu_znak {
-    height: 28px;
-    width: 35px;
+    height: 34%;
+    width: 2%;
     margin-left: 83.3%;
     cursor: pointer;
     display: block;
     position: absolute;
+    margin-top: 31px;
 }
 
 /*----------------------------------*/
 
 .search-bar{
-    width: 100px;
-    height: 7px;
+    width: 100%;
+    height: 65%;
     right: 50px;
 }
 .search-box{
     left: 895px;
     position: relative;
-    height: 39px;
-    width: 60px;
+    height: 71%;
+    width: 30%;
     border-radius: 50%;
     box-shadow: 5px 5px 30px rgba(0,0,0,.2);
     transition: all 0.5s cubic-bezier(0.68, -0.555, 0.265, 1.55);
 }
 .search-box.active{
-    width: 350px;
+    width: 23%;
 }
 .search-box input{
     height: 100%;
@@ -111,8 +117,8 @@ header {
     right: 175px;
     top: 50%;
     transform: translateY(-54%);
-    height: 50px;
-    width: 52px;
+    height: 119%;
+    width: 11%;
     background: #ff4669;
     border-radius: 50%;
     text-align: center;
@@ -125,8 +131,8 @@ header {
 
 }
 .search-box .search-icon.active{
-    height: 50px;
-    width: 50px;
+    height: 122%;
+    width: 14.5%;
     color: #fff;
     right: 5px;
     background: #ff4669;
@@ -135,8 +141,8 @@ header {
     font-size: 20px;
 }
 .search-icon img{
-    height: 30px;
-    width: 30px;
+    height: 57%;
+    width: 58%;
     margin: 10px 10px;
 }
 
@@ -217,8 +223,39 @@ header {
     height: 50%;
     max-width: 80%;
     cursor: pointer;
-    padding-right: 20%;
+    padding-right: 16%;
 }
+.chetyri-elementy-4 a{
+    height: 112%;
+    width: 80%;
+}
+
+/*-------------------*/
+
+#progress {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 8%;
+    width: 5%;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  #progress-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #2c5c81;
+  }
+
  /* -------------------------------TEXT------------------------------------------------ */
 .text-content {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -294,4 +331,41 @@ header {
     padding-left: 2%;
     font-size: 15px;
     font-family: 'proximanova',sans-serif;
+}
+/* --------------------------------------footer----------------------------------------- */
+footer {
+    margin-left: 7.4%;
+    margin-right: 7.4%;
+    margin-top: 4.5%;
+}
+.sotsyalnaya-set {
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+    opacity: .3;
+    margin-top: 13px;
+}
+.sotsyalnaya-set:hover {
+    opacity: 1;
+}
+.footer-text {
+    padding-top: 0px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+.footer-text p {
+    cursor: pointer;
+}
+.footer-text p:hover {
+    text-decoration: underline;
+}
+.nizhnaya-chast-footer {
+    margin-top: 2%;
+}
+.google-assistant-appstore {
+    cursor: pointer;
+}
+.google-assistant-appstore:hover {
+    opacity: .6;
 }

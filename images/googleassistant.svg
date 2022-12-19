@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="125" height="41" viewBox="0 0 125 41">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#1C1C1C" d="M124.93 35.343c0 3.05-2.472 5.523-5.521 5.523H5.523C2.473 40.866 0 38.392 0 35.343V5.523C0 2.472 2.473 0 5.523 0h113.886c3.05 0 5.521 2.473 5.521 5.522v29.82"/>
+        <text fill="#FFF" font-family="ProximaNova-Semibold, Proxima Nova" font-size="14" font-weight="500" letter-spacing=".222">
+            <tspan x="49" y="20">Google</tspan> <tspan x="95.707" y="20.014" font-family="ProximaNova-Regular, Proxima Nova" font-weight="normal"> </tspan> <tspan x="49" y="34.014" font-family="ProximaNova-Regular, Proxima Nova" font-weight="normal">Assistant</tspan>
+        </text>
+        <g transform="translate(8 6)">
+            <circle cx="9.435" cy="9.435" r="9.435" fill="#3E82F7"/>
+            <circle cx="28.978" cy="10.109" r="2.022" fill="#2DA94F"/>
+            <circle cx="23.587" cy="14.826" r="4.043" fill="#EC422D"/>
+            <circle cx="23.587" cy="24.261" r="4.717" fill="#FDBD00"/>
+        </g>
+    </g>
+</svg>
