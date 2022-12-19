@@ -1,9 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     font-family: 'proximanova',sans-serif;
     color: #fff;
     background: #000;
-    height: 2000px;
+    height: 1700px;
     /* border-width: 1;
     border-style: solid;
     border-color: #e2e8f0; */
@@ -19,6 +22,8 @@ header {
     display: block;
     position: fixed;
     z-index: 5;
+    display: flex;
+    flex-direction: column;
 }
 .asa {
     padding-top: 28px;
@@ -39,7 +44,7 @@ header {
 }
 .zagolovok-slovo:hover {
     text-decoration: underline;
-    transition: color .2s linear:
+    transition: color .2s linear;
     color: #ff4669;
 }
 .zagolovok-slovo-1 {
@@ -50,7 +55,7 @@ header {
 }
 .zagolovok-slovo-1:hover {
     text-decoration: underline;
-    transition: color .2s linear:
+    transition: color .2s linear;
     color: #ff4669;
 }
 .znak_iskat {
@@ -63,32 +68,32 @@ header {
     margin-top: 2px;
 }
 .menu_znak {
-    height: 28px;
-    width: 35px;
+    height: 34%;
+    width: 2%;
     margin-left: 83.3%;
     cursor: pointer;
     display: block;
     position: absolute;
+    margin-top: 31px;
 }
-
 /*----------------------------------*/
 
 .search-bar{
-    width: 100px;
-    height: 7px;
+    width: 100%;
+    height: 65%;
     right: 50px;
 }
 .search-box{
     left: 895px;
     position: relative;
-    height: 39px;
-    width: 60px;
+    height: 71%;
+    width: 30%;
     border-radius: 50%;
     box-shadow: 5px 5px 30px rgba(0,0,0,.2);
     transition: all 0.5s cubic-bezier(0.68, -0.555, 0.265, 1.55);
 }
 .search-box.active{
-    width: 350px;
+    width: 23%;
 }
 .search-box input{
     height: 100%;
@@ -115,8 +120,8 @@ header {
     right: 175px;
     top: 50%;
     transform: translateY(-54%);
-    height: 50px;
-    width: 52px;
+    height: 119%;
+    width: 11%;
     background: #ff4669;
     border-radius: 50%;
     text-align: center;
@@ -129,8 +134,8 @@ header {
 
 }
 .search-box .search-icon.active{
-    height: 50px;
-    width: 50px;
+    height: 122%;
+    width: 14.5%;
     color: #fff;
     right: 5px;
     background: #ff4669;
@@ -139,62 +144,103 @@ header {
     font-size: 20px;
 }
 .search-icon img{
-    height: 30px;
-    width: 30px;
+    height: 57%;
+    width: 58%;
     margin: 10px 10px;
 }
 
-.zagolovok-slovo-3{
-    font-size: 13px;
-    color: white;
-    padding-top: 70px;
-    padding-left: 135px;
-}
-
-#div-pod-zogolovok {
+ /* ------------------------------------------------------------------------------- */
+ #div-pod-zogolovok {
     height: 85px;
     width: 100%;
  }
-
-
-.novostei-pro-sport {
+ h1  {
     margin-left: 7.4%;
-    /* margin-right: 7.4%; */
-    margin-top: 20px;
+    font-size: 60px;
+    margin-bottom: 44px;
+    margin-top: 64px;
+    font-weight: 700;
+    line-height: .8;
+ }
+ .avtorizatsya{
+    margin-left: 7.4%;
+    width: 50%;
+    flex-direction: column;
+    /* border-width: 1;
+    border-style: solid;
+    border-color: #e2e8f0; */
+ }
+ .chetyryi-avtorizatsya {
+    height: 46px;
+    background-color: #444444;
+    border-radius: 2px;
+    box-shadow: 0 3px 7px 0 rgb(0 0 0 / 40%);
+    color: #fff;
+    font-size: 15px;
+    width: 55%;
+    transition: background-color .1s ease,color .1s ease;
+    margin-bottom: 3%;
+    padding-left: 20px;
+    outline: none;
+    border: none;
 }
-.kartinki-pro-sport {
-    display: flex;
-    margin-bottom: 30px;
+input:hover {
+    opacity: .7;
 }
-.text-i-kartinka {
-    width: 21.6%;
-    height: 215px;
-    margin-right: 30px;
+.chetytyi-avtorizatsya:focus {
+    background-color: #fff;
+    opacity: 1;
+    color: #000;
 }
-.mnogo-kartinki-pro-sport {
-    max-width: 20.4%;
-    position: absolute;
-    cursor: pointer;
+::placeholder { 
+    color: #fff;
 }
-.text-na-kartinke {
-    width: 18%;
-    line-height: 1.25;
-    background: #000;
+.submit-account {
+    height: 46px;
+    background-color: #ff4669;
+    border-radius: 2px;
+    font-size: 18px;
+    width: 25%;
+    color: white;
+    font-weight: 600;
+    line-height: 1.2;
+    display: block;
+}
+/* --------------------------------------footer----------------------------------------- */
+footer {
+    margin-left: 7.4%;
+    margin-right: 7.4%;
+    margin-top: 4.5%;
+}
+.sotsyalnaya-set {
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+    opacity: .3;
+    margin-top: 13px;
+}
+.sotsyalnaya-set:hover {
+    opacity: 1;
+}
+.footer-text {
+    padding-top: 0px;
     font-size: 16px;
     font-weight: 600;
     line-height: 1.25;
-    position: absolute;
-    margin: -50%;
-    display: inline;
-    cursor: pointer;    
 }
-.text-i-kartinka:hover .mnogo-kartinki-pro-sport {
-    opacity: .38;
-    transition:  opacity 200ms linear;
+.footer-text p {
+    cursor: pointer;
 }
-.text-i-kartinka:hover .text-na-kartinke {
-    color: #fff;
-    background: none;
-    transition:  opacity 200ms linear;
+.footer-text p:hover {
+    text-decoration: underline;
 }
-
+.nizhnaya-chast-footer {
+    margin-top: 2%;
+}
+.google-assistant-appstore {
+    cursor: pointer;
+}
+.google-assistant-appstore:hover {
+    opacity: .6;
+}
+ 
