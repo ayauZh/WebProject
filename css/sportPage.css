@@ -35,6 +35,8 @@ header {
 }
 .zagolovok-slovo:hover {
     text-decoration: underline;
+    transition: color .2s linear;
+    color: #ff4669;
 }
 .zagolovok-slovo-1 {
     cursor: pointer;
@@ -44,6 +46,8 @@ header {
 }
 .zagolovok-slovo-1:hover {
     text-decoration: underline;
+    transition: color .2s linear;
+    color: #ff4669;
 }
 .znak_iskat {
     height: 23px;
