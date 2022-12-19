@@ -10,7 +10,7 @@ function comments_jss_2(){
     document.getElementById('razvernut').style.display='none';
 }
 
-
+/* 
 const searchBox = document.querySelector(".search-box");
 const searchBtn = document.querySelector(".search-icon");
 const searchInput = document.querySelector("input");
@@ -18,7 +18,7 @@ searchBtn.onclick = ()=>{
     searchBox.classList.add("active");
     searchBtn.classList.add("active");
     searchInput.classList.add("active");
-}
+}*/
 
 
 let calcScrollValue = () => {
