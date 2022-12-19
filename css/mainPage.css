@@ -48,6 +48,8 @@ header {
     margin-top: 0.2%;
     position: absolute;
     margin-left: 18%;
+    text-decoration: none;
+    color: white;
 }
 .zagolovok-slovo-1:hover {
     text-decoration: underline;
