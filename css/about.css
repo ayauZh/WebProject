@@ -332,3 +332,129 @@ footer {
 .google-assistant-appstore:hover {
     opacity: .6;
 }
+/* -------------------------------mobile-version------------------------------------------------ */
+
+@media (max-width: 768px){
+    #div-pod-zogolovok {
+        height: 85px;
+        width: 100%;
+     }
+    .glavnaya-novost {
+        width: 100%;
+        height: 800px;
+    }
+    .glavnaya-kartinka {
+        max-width: 100%;
+        height: 500px;
+        position: absolute;
+        display: block;
+    }
+    #background-dlya-kartinok{
+        width: 100%;
+        height: 750px;
+        position: absolute;
+        z-index: 1;
+        background: linear-gradient(to right,black 0%,rgba(0,0,0,0) 100%);
+    }
+    .osnovnyie-zagolovoki {
+        margin-left: 7.4%;
+        margin-top: 14%;
+        position: absolute;
+        z-index: 2;
+    }
+    .h1-zogolovok {
+        font-size: 29px;
+        width: 60%;
+    }
+    
+    .video-na-zagolovke {
+        margin-top: 2.4%;
+        height: 50px;
+        width: 120px;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.25px;
+        background-color: #ff4669;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    .ikonka-play {
+        width: 25px;
+        height: 25px;
+        margin-top: 10%;
+        margin-left: 15%;
+        float: left;
+    }
+    .vremya-video {
+        float: left;
+        margin-top: 13%;
+        margin-left: 12%;
+    }
+    .video-na-zagolovke:hover {
+        background-color: #565657;
+    }
+    
+    /*-------------------*/
+    
+    #progress {
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+        height: 8%;
+        width: 5%;
+        display: none;
+        place-items: center;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+      }
+      #progress-value {
+        display: block;
+        height: calc(100% - 15px);
+        width: calc(100% - 15px);
+        background-color: #ffffff;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        font-size: 35px;
+        color: #2c5c81;
+      }
+      /* --------------------------------------footer----------------------------------------- */
+    footer {
+        margin-left: 7.4%;
+        margin-right: 7.4%;
+        margin-top: 4.5%;
+    }
+    .sotsyalnaya-set {
+        height: 30px;
+        width: 30px;
+        margin-right: 15px;
+        opacity: .3;
+        margin-top: 13px;
+    }
+    .sotsyalnaya-set:hover {
+        opacity: 1;
+    }
+    .footer-text {
+        padding-top: 0px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.25;
+    }
+    .footer-text p {
+        cursor: pointer;
+    }
+    .footer-text p:hover {
+        text-decoration: underline;
+    }
+    .nizhnaya-chast-footer {
+        margin-top: 2%;
+    }
+    .google-assistant-appstore {
+        cursor: pointer;
+    }
+    .google-assistant-appstore:hover {
+        opacity: .6;
+    }
+}
+
