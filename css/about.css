@@ -22,14 +22,18 @@ header {
     display: block;
     position: fixed;
     z-index: 5;
-    display: flex;
-    flex-direction: column;
 }
 .asa {
-    padding-top: 28px;
+    padding-top: 22px;
     margin-right: 7.4%;
     margin-left: 7.4%;
     font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    height: 78%;
+}
+a img{
+    margin-top: 0.9%;
 }
 .znak-news {
     max-width: 10.7%;
@@ -38,7 +42,7 @@ header {
 }
 .zagolovok-slovo {
     margin-left: 13.5%;
-    margin-top: 0.2%;
+    margin-top: 0.9%;
     position: absolute;
     cursor: pointer;
 }
@@ -49,10 +53,9 @@ header {
 }
 .zagolovok-slovo-1 {
     cursor: pointer;
-    margin-top: 0.2%;
+    margin-top: 0.9%;
     position: absolute;
     margin-left: 18%;
-    color: #fff;
 }
 .zagolovok-slovo-1:hover {
     text-decoration: underline;
@@ -72,84 +75,61 @@ header {
     height: 34%;
     width: 2%;
     margin-left: 83.3%;
+    margin-top: 0.2%;
     cursor: pointer;
     display: block;
     position: absolute;
-    margin-top: 31px;
+
 }
+
+
 
 /*----------------------------------*/
 
+.container{
+    width: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70%;
+    padding: -2px;
+}
 .search-bar{
     width: 100%;
-    height: 65%;
-    right: 50px;
+    max-width: 700%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
 }
-.search-box{
-    left: 895px;
-    position: relative;
-    height: 71%;
-    width: 30%;
-    border-radius: 50%;
-    box-shadow: 5px 5px 30px rgba(0,0,0,.2);
-    transition: all 0.5s cubic-bezier(0.68, -0.555, 0.265, 1.55);
-}
-.search-box.active{
-    width: 23%;
-}
-.search-box input{
-    height: 100%;
-    width: 100%;
-    border: none;
+
+
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
     outline: none;
-    background: #fff;
-    font-size: 18px;
-    border-radius: 50px;
-    padding: -19px 60px 0 20px;
-    opacity: 0;
-    transition: all 0.5s cubic-bezier(0.68, -0.555, 0.265, 1.55);
-
-}
-.search-box input.active{
-    opacity: 1;
-}
-.search-box input::placeholder{
-    color: #e8e8e8;
-}
-.search-box .search-icon{
-    position: absolute;
-    left: 307px;
-    right: 175px;
-    top: 50%;
-    transform: translateY(-54%);
-    height: 119%;
-    width: 11%;
-    background: #ff4669;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 60px;
-    font-size: 22px;
+    padding: 3% 4%;
+    font-size: 13px;
     color:#ff4669;
+}
+.container::placeholder{
+    color: #a09799;
+}
+.search-bar button img{
+    width: 97%;
+}
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 13%;
+    height: 5vh;
+    background:#ff4669;
     cursor: pointer;
-    z-index: 1;
-    transition: all 0.5s cubic-bezier(0.68, -0.555, 0.265, 1.55);
+}
 
-}
-.search-box .search-icon.active{
-    height: 122%;
-    width: 14.5%;
-    color: #fff;
-    right: 5px;
-    background: #ff4669;
-    transform: translateY(-52%) rotate(360deg);
-    line-height: 50px;
-    font-size: 20px;
-}
-.search-icon img{
-    height: 57%;
-    width: 58%;
-    margin: 10px 10px;
-}
+
+
 
  /* ------------------------------------------------------------------------------- */
  #div-pod-zogolovok {
@@ -213,11 +193,12 @@ header {
 
 /*-------------------*/
 
+
 #progress {
     position: fixed;
-    bottom: 20px;
-    right: 10px;
-    height: 8%;
+    bottom: 3%;
+    right: 2%;
+    height: 9%;
     width: 5%;
     display: none;
     place-items: center;
@@ -229,13 +210,14 @@ header {
     display: block;
     height: calc(100% - 15px);
     width: calc(100% - 15px);
-    background-color: #ffffff;
+    background-color: #3f3b3b;
     border-radius: 50%;
     display: grid;
     place-items: center;
-    font-size: 35px;
-    color: #2c5c81;
+    font-size: 26px;
+    color: #ccd0d4;
   }
+
 
  /* -------------------------------TEXT------------------------------------------------ */
 .text-content {
@@ -334,6 +316,7 @@ footer {
     font-size: 16px;
     font-weight: 600;
     line-height: 1.25;
+    margin-left: 80%;
 }
 .footer-text p {
     cursor: pointer;
@@ -347,6 +330,209 @@ footer {
 .google-assistant-appstore {
     cursor: pointer;
 }
+#google-assistant {
+    margin-left: 73%; 
+    margin-right: 1%
+}
 .google-assistant-appstore:hover {
     opacity: .6;
 }
+/* -------------------------------mobile-version------------------------------------------------ */
+
+@media (max-width: 768px){
+    #div-pod-zogolovok {
+        height: 85px;
+        width: 100%;
+     }
+    .glavnaya-novost {
+        width: 100%;
+        height: 600px;
+    }
+    .glavnaya-kartinka {
+        max-width: 100%;
+        height: 500px;
+        position: absolute;
+        display: block;
+        object-fit: cover;
+    }
+    #background-dlya-kartinok{
+        width: 100%;
+        height: 550px;
+        position: absolute;
+        z-index: 1;
+        background: linear-gradient(to right,black 0%,rgba(0,0,0,0) 100%);
+    }
+    .osnovnyie-zagolovoki {
+        margin-left: 7.4%;
+        margin-top: 14%;
+        position: absolute;
+        z-index: 2;
+    }
+    .h1-zogolovok {
+        font-size: 29px;
+        width: 60%;
+    }
+    
+    .video-na-zagolovke {
+        margin-top: 2.4%;
+        height: 50px;
+        width: 120px;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.25px;
+        background-color: #ff4669;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    .ikonka-play {
+        width: 25px;
+        height: 25px;
+        margin-top: 10%;
+        margin-left: 15%;
+        float: left;
+    }
+    .vremya-video {
+        float: left;
+        margin-top: 13%;
+        margin-left: 12%;
+    }
+    .video-na-zagolovke:hover {
+        background-color: #565657;
+    }
+    
+    /*-------------------*/
+    /* -------------------------------TEXT------------------------------------------------ */
+    .text-content {
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        margin-left: 7.4%;
+        margin-top: 2.5%;
+        max-width: 610px;
+        color: #e8e8e8;
+        line-height: 1.3;
+    }
+    /* -------------------------------COMMENTS------------------------------------------------ */
+    .comments {
+        margin-left: 7.4%;
+        margin-top: 4.5%;
+        max-width: 610px;
+    }
+    #comments-js {
+        display: flex;;
+    }
+    #comments-js:hover {
+        text-decoration: underline;
+    }
+    .comment-oblachko {
+        height: 30px;
+        max-width: 30px;
+        cursor: pointer;
+        display: block;
+        margin-right: 8px;
+    }
+    .comment-comments {
+        text-align: center;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 1.2;
+        cursor: pointer;
+        margin-top: 5px;
+        margin-right: 8px;
+    }
+    #razvernut {
+        height: 30px;
+        max-width: 30px;
+        cursor: pointer;
+        display: none;
+        
+    }
+    #svernut {
+        height: 30px;
+        max-width: 30px;
+        cursor: pointer;
+        margin-right: 8px;
+    }
+    #comment-textarea {
+        max-width: 100%;
+        min-width: 100%;
+        height: 45px;
+        background-color: #444444;
+        border-radius: 5px;
+        color: #fff;
+        border: #000 solid;
+        margin-top: 1%;
+        font-size: 15px;
+        font-family: 'proximanova',sans-serif;
+        display: none;
+        /* background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIyIiBoZWlnaHQ9IjIyIj48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMTIuMjkzLjI5M2ExIDEgMCAwMTEuNDE0IDBMMjEuNDE0IDhsLTcuNzA3IDcuNzA3YTEgMSAwIDAxLTEuNDE0LTEuNDE0TDE3LjU4NSA5SDExYy01LjM2OCAwLTguMjY2IDIuNTAxLTguOTYyIDcuNzVMMiAxNy4wNTZWMjFhMSAxIDAgMDEtMiAwdi00bC4wMDYtLjExQy43MyAxMC4zODQgNC40OSA3IDExIDdoNi41ODVsLTUuMjkyLTUuMjkzYTEgMSAwIDAxLS4wODMtMS4zMnoiLz48L3N2Zz4K);
+        background-position: right 0.625rem top 0.875rem; */
+        background-repeat: no-repeat;
+        resize: none;
+    }
+    #comment-textarea.show {
+        display: block;
+    }
+    ::placeholder {
+        padding-top: 1%;
+        padding-left: 2%;
+        font-size: 15px;
+        font-family: 'proximanova',sans-serif;
+    }
+    #progress {
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+        height: 8%;
+        width: 5%;
+        display: none;
+        place-items: center;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+      }
+      #progress-value {
+        display: block;
+        height: calc(100% - 15px);
+        width: calc(100% - 15px);
+        background-color: #ffffff;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        font-size: 35px;
+        color: #2c5c81;
+      }
+      /* --------------------------------------footer----------------------------------------- */
+    footer {
+        margin-left: 7.4%;
+        margin-top: 4.5%;
+    }
+    .sotsyalnaya-set {
+        height: 30px;
+        width: 30px;
+        opacity: .3;
+        margin-top: 13px;
+    }
+    .sotsyalnaya-set:hover {
+        opacity: 1;
+    }
+    .footer-text {
+        padding-top: 0px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.25;
+        margin-left: 60%;
+    }
+    .footer-text p {
+        cursor: pointer;
+    }
+    .footer-text p:hover {
+        text-decoration: underline;
+    }
+    .nizhnaya-chast-footer {
+        margin-top: 2%;
+    }
+    .google-assistant-appstore {
+        cursor: pointer;
+        display: none;
+    }
+}
+

@@ -56,12 +56,6 @@ a img{
     margin-top: 0.9%;
     position: absolute;
     margin-left: 18%;
-<<<<<<< HEAD
-    text-decoration: none;
-    color: white;
-=======
-    color: #fff;
->>>>>>> a6aaac677b40c96d6bb08136d124b6a8601f4a00
 }
 .zagolovok-slovo-1:hover {
     text-decoration: underline;
@@ -109,13 +103,14 @@ a img{
     border-radius: 60px;
 }
 
+
 .search-bar input{
     background: transparent;
     flex: 1;
     border: 0;
     outline: none;
-    padding: 2% 4%;
-    font-size: 20px;
+    padding: 3% 5.5%;
+    font-size: 15px;
     color:#ff4669;
 }
 .container::placeholder{
@@ -127,9 +122,9 @@ a img{
 .search-bar button{
     border: 0;
     border-radius: 50%;
-    width: 45%;
-    height: 4vh;
-    background: #444444;
+    width: 13%;
+    height: 5vh;
+    background:#ff4669;
     cursor: pointer;
 }
 
@@ -238,12 +233,12 @@ a img{
     display: block;
     height: calc(100% - 15px);
     width: calc(100% - 15px);
-    background-color: #ffffff;
+    background-color: #3f3b3b;
     border-radius: 50%;
     display: grid;
     place-items: center;
     font-size: 26px;
-    color: #0e0f10;
+    color: #ccd0d4;
   }
 
  /* -------------------------------TEXT------------------------------------------------ */
@@ -343,6 +338,7 @@ footer {
     font-size: 16px;
     font-weight: 600;
     line-height: 1.25;
+    margin-left: 80%;
 }
 .footer-text p {
     cursor: pointer;
@@ -355,6 +351,10 @@ footer {
 }
 .google-assistant-appstore {
     cursor: pointer;
+}
+#google-assistant {
+    margin-left: 73%; 
+    margin-right: 1%
 }
 .google-assistant-appstore:hover {
     opacity: .6;
