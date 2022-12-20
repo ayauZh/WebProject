@@ -11,16 +11,6 @@ function comments_jss_2(){
 }
 
 
-const searchBox = document.querySelector(".search-box");
-const searchBtn = document.querySelector(".search-icon");
-const searchInput = document.querySelector("input");
-searchBtn.onclick = ()=>{
-    searchBox.classList.add("active");
-    searchBtn.classList.add("active");
-    searchInput.classList.add("active");
-}
-
-
 let calcScrollValue = () => {
     let scrollProgress = document.getElementById("progress");
     let progressValue = document.getElementById("progress-value");
