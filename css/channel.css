@@ -21,10 +21,16 @@ header {
     z-index: 5;
 }
 .asa {
-    padding-top: 28px;
+    padding-top: 22px;
     margin-right: 7.4%;
     margin-left: 7.4%;
     font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    height: 78%;
+}
+a img{
+    margin-top: 0.9%;
 }
 .znak-news {
     max-width: 10.7%;
@@ -33,7 +39,7 @@ header {
 }
 .zagolovok-slovo {
     margin-left: 13.5%;
-    margin-top: 0.2%;
+    margin-top: 0.9%;
     position: absolute;
     cursor: pointer;
 }
@@ -44,7 +50,7 @@ header {
 }
 .zagolovok-slovo-1 {
     cursor: pointer;
-    margin-top: 0.2%;
+    margin-top: 0.9%;
     position: absolute;
     margin-left: 18%;
 }
@@ -63,86 +69,61 @@ header {
     margin-top: 2px;
 }
 .menu_znak {
-    height: 28px;
-    width: 35px;
+    height: 34%;
+    width: 2%;
     margin-left: 83.3%;
+    margin-top: 0.2%;
     cursor: pointer;
     display: block;
     position: absolute;
+
 }
+
+
 
 /*----------------------------------*/
 
+.container{
+    width: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70%;
+    padding: -2px;
+}
 .search-bar{
-    width: 100px;
-    height: 7px;
-    right: 50px;
-}
-.search-box{
-    left: 895px;
-    position: relative;
-    height: 39px;
-    width: 60px;
-    border-radius: 50%;
-    box-shadow: 5px 5px 30px rgba(0,0,0,.2);
-    transition: all 0.5s cubic-bezier(0.68, -0.555, 0.265, 1.55);
-}
-.search-box.active{
-    width: 350px;
-}
-.search-box input{
-    height: 100%;
     width: 100%;
-    border: none;
+    max-width: 700%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+}
+
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
     outline: none;
-    background: #fff;
-    font-size: 18px;
-    border-radius: 50px;
-    padding: -19px 60px 0 20px;
-    opacity: 0;
-    transition: all 0.5s cubic-bezier(0.68, -0.555, 0.265, 1.55);
-
-}
-.search-box input.active{
-    opacity: 1;
-}
-.search-box input::placeholder{
-    color: #e8e8e8;
-}
-.search-box .search-icon{
-    position: absolute;
-    left: 307px;
-    right: 175px;
-    top: 50%;
-    transform: translateY(-54%);
-    height: 50px;
-    width: 52px;
-    background: #ff4669;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 60px;
-    font-size: 22px;
+    padding: 3% 5.5%;
+    font-size: 15px;
     color:#ff4669;
+}
+.container::placeholder{
+    color: #a09799;
+}
+.search-bar button img{
+    width: 97%;
+}
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 13%;
+    height: 5vh;
+    background:#ff4669;
     cursor: pointer;
-    z-index: 1;
-    transition: all 0.5s cubic-bezier(0.68, -0.555, 0.265, 1.55);
-
 }
-.search-box .search-icon.active{
-    height: 50px;
-    width: 50px;
-    color: #fff;
-    right: 5px;
-    background: #ff4669;
-    transform: translateY(-52%) rotate(360deg);
-    line-height: 50px;
-    font-size: 20px;
-}
-.search-icon img{
-    height: 30px;
-    width: 30px;
-    margin: 10px 10px;
-}
+/*---------------------------------------*/
 
 .zagolovok-slovo-3{
     font-size: 13px;
@@ -201,6 +182,33 @@ header {
     background: none;
     transition:  opacity 200ms linear;
 }
+
+/*-----------------------------------------------------*/
+
+#progress {
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    height: 9%;
+    width: 5%;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  #progress-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #3f3b3b;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 26px;
+    color: #ccd0d4;
+  }
+
 /* --------------------------------------footer----------------------------------------- */
 footer {
     margin-left: 7.4%;

@@ -26,10 +26,16 @@ header {
     flex-direction: column;
 }
 .asa {
-    padding-top: 28px;
+    padding-top: 22px;
     margin-right: 7.4%;
     margin-left: 7.4%;
     font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    height: 78%;
+}
+a img{
+    margin-top: 0.9%;
 }
 .znak-news {
     max-width: 10.7%;
@@ -38,7 +44,7 @@ header {
 }
 .zagolovok-slovo {
     margin-left: 13.5%;
-    margin-top: 0.2%;
+    margin-top: 0.9%;
     position: absolute;
     cursor: pointer;
 }
@@ -49,7 +55,7 @@ header {
 }
 .zagolovok-slovo-1 {
     cursor: pointer;
-    margin-top: 0.2%;
+    margin-top: 0.9%;
     position: absolute;
     margin-left: 18%;
 }
@@ -71,82 +77,54 @@ header {
     height: 34%;
     width: 2%;
     margin-left: 83.3%;
+    margin-top: 0.2%;
     cursor: pointer;
     display: block;
     position: absolute;
-    margin-top: 31px;
+
 }
+
 /*----------------------------------*/
 
+.container{
+    width: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70%;
+    padding: -2px;
+}
 .search-bar{
     width: 100%;
-    height: 65%;
-    right: 50px;
+    max-width: 700%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
 }
-.search-box{
-    left: 895px;
-    position: relative;
-    height: 71%;
-    width: 30%;
-    border-radius: 50%;
-    box-shadow: 5px 5px 30px rgba(0,0,0,.2);
-    transition: all 0.5s cubic-bezier(0.68, -0.555, 0.265, 1.55);
-}
-.search-box.active{
-    width: 23%;
-}
-.search-box input{
-    height: 100%;
-    width: 100%;
-    border: none;
+
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
     outline: none;
-    background: #fff;
-    font-size: 18px;
-    border-radius: 50px;
-    padding: -19px 60px 0 20px;
-    opacity: 0;
-    transition: all 0.5s cubic-bezier(0.68, -0.555, 0.265, 1.55);
-
-}
-.search-box input.active{
-    opacity: 1;
-}
-.search-box input::placeholder{
-    color: #e8e8e8;
-}
-.search-box .search-icon{
-    position: absolute;
-    left: 307px;
-    right: 175px;
-    top: 50%;
-    transform: translateY(-54%);
-    height: 119%;
-    width: 11%;
-    background: #ff4669;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 60px;
-    font-size: 22px;
+    padding: 3% 5.5%;
+    font-size: 15px;
     color:#ff4669;
+}
+.container::placeholder{
+    color: #a09799;
+}
+.search-bar button img{
+    width: 97%;
+}
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 13%;
+    height: 5vh;
+    background:#ff4669;
     cursor: pointer;
-    z-index: 1;
-    transition: all 0.5s cubic-bezier(0.68, -0.555, 0.265, 1.55);
-
-}
-.search-box .search-icon.active{
-    height: 122%;
-    width: 14.5%;
-    color: #fff;
-    right: 5px;
-    background: #ff4669;
-    transform: translateY(-52%) rotate(360deg);
-    line-height: 50px;
-    font-size: 20px;
-}
-.search-icon img{
-    height: 57%;
-    width: 58%;
-    margin: 10px 10px;
 }
 
  /* ------------------------------------------------------------------------------- */
