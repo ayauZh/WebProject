@@ -62,12 +62,15 @@ header {
     margin-top: 2px;
 }
 .menu_znak {
-    height: 28px;
-    width: 35px;
-    margin-left: 83.3%;
+    height: 34%;
+    width: 2%;
+    margin-left: 84.3%;
+    margin-top: 0.5%;
     cursor: pointer;
-    display: block;
+    display: none;
     position: absolute;
+    margin-bottom: 100%;
+
 }
 /*----------------------------------*/
 
@@ -141,7 +144,7 @@ header {
 
 /* ------------------------------------------------------------------------------- */
 #div-pod-zogolovok {
-    height: 85px;
+    height: 105px;
     width: 100%;
  }
 .cnannels-sport {
@@ -163,7 +166,7 @@ header {
     opacity: 1;
 }
 #follow-link {
-    margin-left: 73%;
+    margin-left: 80%;
 }
 .follow {
     font-size: 16px;
@@ -178,7 +181,7 @@ header {
     font-size: 1rem;
     font-weight: 600;
     line-height: 2rem;
-    padding-left: 1.63rem;
+    padding-left: 0.625rem;
     padding-right: 0.625rem;
     align-items: center;
     cursor: pointer;
@@ -266,6 +269,10 @@ footer {
 }
 .google-assistant-appstore {
     cursor: pointer;
+}
+#google-appstore {
+    margin-left: 70%;
+    margin-right: 6%;
 }
 #google-assistant {
     margin-left: 73%; 
