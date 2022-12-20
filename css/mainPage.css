@@ -56,7 +56,6 @@ a img{
     margin-top: 0.9%;
     position: absolute;
     margin-left: 18%;
-    color: #fff;
 }
 .zagolovok-slovo-1:hover {
     text-decoration: underline;
@@ -233,12 +232,12 @@ a img{
     display: block;
     height: calc(100% - 15px);
     width: calc(100% - 15px);
-    background-color: #ffffff;
+    background-color: #3f3b3b;
     border-radius: 50%;
     display: grid;
     place-items: center;
     font-size: 26px;
-    color: #0e0f10;
+    color: #ccd0d4;
   }
 
  /* -------------------------------TEXT------------------------------------------------ */
