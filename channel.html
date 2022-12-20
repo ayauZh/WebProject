@@ -4,19 +4,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/channel.css">
+	<link rel="stylesheet" href="css/menu.css">
 	<script defer src="javascript/main.js"></script>
-	<title></title>
-</head>
-<body>
-	<header class="header open">
-    <script src="javascript/mainPage.js"></script>
 	<title></title>
 </head>
 <body>
     <div id="progress">
         <span id="progress-value">&#x1F815;</span>
     </div>
-	<header>
+	<header class="header open">
         <div class="asa">
             <a href="mainPage.html"><img src="images/znakNews.svg" class="znak-news" alt=""></a>
             <a href="about.html"><div class="zagolovok-slovo">About</div></a>
@@ -29,33 +25,31 @@
                 </form>
             </div>
             
-            <!--<nav class="menu">
+            <nav class="menu">
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a class="menu__link" href="#">
+                        <a class="menu__link" href="about.html">
                             ABOUT
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">
-                            SUBMIT A STORY
+                        <a class="menu__link" href="signIn.html" id="sign-in">
+                            Sign in
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">
-                            Contact
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">
-                            Become a contributor
+                        <a class="menu__link" href="createAccount.html" id="create-account">
+                            Create account
                         </a>
                     </li>
                 </ul>
             </nav>
             <button class="header__burger-btn" id="burger">
                 <span></span><span></span><span></span>
-            </button>-->
+            </button>
+
+            <img src="images/menu.png" alt="" class="menu_znak">
+
         </div>
     </header>
 
@@ -72,7 +66,7 @@
                 </a>
     		</div>
     		<div class="text-i-kartinka">
-                <a href ="animalPage.html">
+                <a href ="animalPage.html"></a>
     			    <img src="images/leopard.jpg" alt=""  class="mnogo-kartinki-pro-sport">
     			    <div class="text-na-kartinke">Animal</div>
                 </a>
@@ -103,8 +97,8 @@
         </div>
         <div style="display: flex" class="nizhnaya-chast-footer">
             <img src="https://www.beautifulnews.com/themes/custom/beautiful_news/images/branding/bn-brand-logo-gs.svg" alt="">
-            <img src="images/googleassistant.svg" alt="" id="google-assistant" class="google-assistant-appstore">
-            <img src="images/appstore.svg" alt="" class="google-assistant-appstore">
+            <a href="https://assistant.google.com/intl/ru_ru/" id="google-appstore"><img src="images/googleassistant.svg" alt="" id="google-assistant" class="google-assistant-appstore"></a>
+            <a href="https://www.apple.com/ru/app-store/"><img src="images/appstore.svg" alt="" class="google-assistant-appstore"></a>
         </div>
     </footer>
 </body>
