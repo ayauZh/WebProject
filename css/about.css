@@ -340,6 +340,112 @@ footer {
 /* -------------------------------mobile-version------------------------------------------------ */
 
 @media (max-width: 768px){
+    header {
+        background-color: rgba(0,0,0,0.7);
+        width: 100%;
+        height: 85px;
+        display: block;
+        position: fixed;
+        z-index: 5;
+    }
+    .asa {
+        padding-top: 28px;
+        margin-right: 7.4%;
+        margin-left: 7.4%;
+        font-weight: bold;
+    }
+    .znak-news {
+        max-width: 20.7%;
+        height: auto;
+        position: absolute;
+    }
+    .zagolovok-slovo {
+        display: none;
+    }
+    .zagolovok-slovo-1 {
+        display: none;
+    }
+    .znak_iskat {
+        height: 23px;
+        width: 23px;
+        cursor: pointer;
+        margin-left: 80.4%;
+        display: block;
+        position: absolute;
+        margin-top: 2px;
+    }
+    .menu_znak {
+        display: none;
+        height: 28px;
+        width: 35px;
+        margin-left: 7%;
+        cursor: pointer;
+        position: absolute;
+    }
+    /*----------------------------------*/
+    
+    .container{
+        width: 21%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 70%;
+        padding: -2px;
+    }
+    .search-bar{
+        max-width: 90%;
+        background: rgba(255, 255, 255, 0.2);
+        display: flex;
+        align-items: center;
+        border-radius: 60px;
+    }
+    
+    .search-bar input{
+        background: transparent;
+        flex: 1;
+        border: 0;
+        outline: none;
+        /* padding: 3% 5.5%; */
+        font-size: 15px;
+        color:#ff4669;
+    }
+    .container::placeholder{
+        color: #a09799;
+    }
+    .search-bar button img{
+        width: 97%;
+    }
+    .search-bar button{
+        display: none;
+    }
+    
+    /*-------------------------------------------------*/
+    /*-------------------*/
+
+
+#progress {
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    height: 20px;
+    width: 5%;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  #progress-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #3f3b3b;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 26px;
+    color: #ccd0d4;
+  }
     #div-pod-zogolovok {
         height: 85px;
         width: 100%;

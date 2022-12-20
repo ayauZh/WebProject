@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/about.css">
-    <title>About Us</title>
+    <link rel="stylesheet" href="css/sportPage.css">
+    <title>Animal News</title>
 </head>
 <body>
     <div id="progress">
         <span id="progress-value">&#x1F815;</span>
-      </div>
+    </div>
     <header>
         <div class="asa">
             <a href="mainPage.html"><img src="images/znakNews.svg" class="znak-news" alt=""></a>
             <a href="about.html"><div class="zagolovok-slovo">About</div></a>
             <a href="channel.html"><div class="zagolovok-slovo-1">Channels</div></a>
-        
-        
+            
             <div class="container">
                 <form action="" class="search-bar">
                     <input type="text" placeholder="search anything" name="q">
@@ -26,47 +25,63 @@
             </div>
             <img src="images/menu.png" alt="" class="menu_znak">
         </div>
-            
-        
     </header>
     <!----------------------------------------------------------------------------------------->
     <div id="div-pod-zogolovok"></div>
-    <div class="glavnaya-novost">
-        <img src="images/about beautiful news.jpg" alt="" class="glavnaya-kartinka">
-        <div id="background-dlya-kartinok"></div>
-        <div class="osnovnyie-zagolovoki">
-            <h1 class="h1-zogolovok">
-                About <br>
-                Beautiful <br>              
-                News</h1>
-            <div style="display: flex">
-                <a href="https://www.beautifulnews.com/about-beautiful-news">
-                    <div class="video-na-zagolovke">
-                        <img src="images/play.png" alt="" class="ikonka-play">
-                        <div class="vremya-video">01:00</div> 
-                    </div>
+    <div class="cnannels-sport">
+        <a href="channel.html" class="nazad-channels">Channels</a>
+        <span>Animal</span>
+        <a href="signIn.html" id="follow-link">
+            <div class="follow">
+                Follow
+                <img src="images/plus.png" alt="" id="plus">
+            </div>
+        </a>
+    </div>
+    <!----------------------------------vse novosti------------------------------------------------------->
+    <div class="novostei-pro-sport">
+        <!-----------------------------------1-row------------------------------------------------->
+        <div class="kartinki-pro-sport">
+            <div class="text-i-kartinka">
+                <a href="karate.html">
+                    <img src="images/brown-hyena-drinking.jpg" alt="" class="mnogo-kartinki-pro-sport">
+                    <div class="text-na-kartinke">How the hyenas of the Namib desert gave up scavenging to become expert hunters</div>
                 </a>
             </div>
+            <div class="text-i-kartinka">
+                <img src="images/Bison.webp" alt="" class="mnogo-kartinki-pro-sport">
+                <div class="text-na-kartinke">How a sacred tie with Native Americans is restoring bison to indigenous lands</div>
+            </div>
+            <div class="text-i-kartinka">
+                <img src="images/cheetah.jpg" alt="" class="mnogo-kartinki-pro-sport">
+                <div class="text-na-kartinke">For the first time, you can go on an Indian safari from your couch</div>
+            </div>
+            <div class="text-i-kartinka">
+                <img src="images/tamarin.jpg" alt="" class="mnogo-kartinki-pro-sport">
+                <div class="text-na-kartinke">Why Colombia dedicates this day to cotton-top tamarins</div>
+            </div>
         </div>
-    </div>
-    <!-------------------------------------TEXT---------------------------------------------------->
-    <div class="text-content">
-        <p>Beautiful News we are dedicated to unearthing inspiring, uplifting, and authentic voices that reflect the good in humanity, as well as the beauty of destinations and our natural world.</p>
-        <p>We gather our stories by keeping a pulse on individuals and organisations that are making a positive impact through their ideas, actions, initiatives and contributions. This diverse set of inspirational narratives collectively showcases humanity’s inherent goodness. </p>
-        <p>Beautiful News offers a platform to amplify their message because we believe that together, we are stronger. It’s these stories that will unite us as we create a community committed to positive action and change.</p>
-    </div>
-    <!-------------------------------------COMMENTS---------------------------------------------------->
-    <div id = comment class="comments">
-        <div id="comments-js">
-            <img src="images/message.svg" alt="" class="comment-oblachko">
-            <span class="comment-comments">Comments</span>
-            <img src="images/svernut.png" alt="" id="svernut" onclick="comments_jss()">
-            <img src="images/razvernut.png" alt="" id="razvernut" onclick="comments_jss_2()">
+        <!-----------------------------------2-row------------------------------------------------->
+        <div class="kartinki-pro-sport">
+            <div class="text-i-kartinka">
+                <img src="images/kiwikiu.jpg" alt="" class="mnogo-kartinki-pro-sport">
+                <div class="text-na-kartinke">She changed her life’s course to save one of Hawai'i’s rarest birds</div>
+            </div>
+            <div class="text-i-kartinka">
+                <img src="images/seals.jpg" alt="" class="mnogo-kartinki-pro-sport">
+                <div class="text-na-kartinke">This rescue team is providing an urban safety net for Cape Town’s iconic seals</div>
+            </div>
+            <div class="text-i-kartinka">
+                <img src="images/shark.jpg" alt="" class="mnogo-kartinki-pro-sport">
+                <div class="text-na-kartinke">Why the world’s biggest shark needs protection from microplastics</div>
+            </div>
+            <div class="text-i-kartinka">
+                <img src="images/otters.jpg" alt="" class="mnogo-kartinki-pro-sport">
+                <div class="text-na-kartinke">This is how smooth-coated otters protect India’s urban ecosystems</div>
+            </div>
         </div>
-        <textarea name="" id="comment-textarea" cols="60" rows="1" placeholder="Type your comment here"></textarea>
+       
     </div>
-
-    <script src="javascript/mainPage.js"></script>
     <!-------------------------------------footer----------------------------------------------->
     <footer>
         <div style="display: flex">
