@@ -5,28 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script defer src="javascript/main.js"></script>
     <title>Karate</title>
 </head>
 <body>
     <div id="progress">
         <span id="progress-value">&#x1F815;</span>
       </div>
-    <header>
+      <header class="header open">
         <div class="asa">
             <a href="mainPage.html"><img src="images/znakNews.svg" class="znak-news" alt=""></a>
             <a href="about.html"><div class="zagolovok-slovo">About</div></a>
             <a href="channel.html"><div class="zagolovok-slovo-1">Channels</div></a>
-
+            
             <div class="container">
                 <form action="" class="search-bar">
                     <input type="text" placeholder="search anything" name="q">
                     <button type="submit"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIyIiBoZWlnaHQ9IjIyIj48cGF0aCBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05Ljc4NyAwYzUuNDA1IDAgOS43ODcgNC4zMDIgOS43ODcgOS42MDlhOS40NTQgOS40NTQgMCAwMS0xLjk4MiA1Ljc5OGwzLjkzIDMuODZjLjYyNi42MTMuNjM1IDEuNjE4LjAyIDIuMjQzbC0uMDIuMDJhMS42NDYgMS42NDYgMCAwMS0yLjMwNyAwbC00LTMuOTI1YTkuODcgOS44NyAwIDAxLTUuNDI4IDEuNjEzQzQuMzgyIDE5LjIxOCAwIDE0LjkxNiAwIDkuNjA4IDAgNC4zMDMgNC4zODIgMCA5Ljc4NyAwem0wIDIuNDAyYy00LjA1NCAwLTcuMzQgMy4yMjctNy4zNCA3LjIwN3MzLjI4NiA3LjIwNiA3LjM0IDcuMjA2IDcuMzQtMy4yMjYgNy4zNC03LjIwNmMwLTMuOTgtMy4yODYtNy4yMDctNy4zNC03LjIwN3oiLz48L3N2Zz4K" alt=""></button>
                 </form>
             </div>
-            <img src="images/menu.png" alt="" class="menu_znak">
-        </div>
             
-        
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="about.html">
+                            ABOUT
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="signIn.html" id="sign-in">
+                            Sign in
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="createAccount.html" id="create-account">
+                            Create account
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__burger-btn" id="burger">
+                <span></span><span></span><span></span>
+            </button>
+
+            <img src="images/menu.png" alt="" class="menu_znak">
+
+        </div>
     </header>
     <!----------------------------------------------------------------------------------------->
     <div id="div-pod-zogolovok"></div>
@@ -37,7 +62,10 @@
             <h1 class="h1-zogolovok">
                 With karate, these kids are taking back their power from cancer
             <div style="display: flex">
-                
+                <div class="video-na-zagolovke">
+                    <img src="images/play.png" alt="" class="ikonka-play">
+                    <div class="vremya-video">01:00</div> 
+                </div>
             </div>
         </div>
     </div>
@@ -73,8 +101,8 @@
         </div>
         <div style="display: flex" class="nizhnaya-chast-footer">
             <img src="https://www.beautifulnews.com/themes/custom/beautiful_news/images/branding/bn-brand-logo-gs.svg" alt="">
-            <img src="images/googleassistant.svg" alt="" id="google-assistant" class="google-assistant-appstore">
-            <img src="images/appstore.svg" alt="" class="google-assistant-appstore">
+            <a href="https://assistant.google.com/intl/ru_ru/" id="google-appstore"><img src="images/googleassistant.svg" alt="" id="google-assistant" class="google-assistant-appstore"></a>
+            <a href="https://www.apple.com/ru/app-store/"><img src="images/appstore.svg" alt="" class="google-assistant-appstore"></a>
         </div>
     </footer>
 </body>
