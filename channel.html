@@ -4,10 +4,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/channel.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<script defer src="javascript/main.js"></script>
 	<title></title>
 </head>
 <body>
-	<header>
+	<header class="header open">
         <div class="asa">
             <a href="mainPage.html"><img src="images/znakNews.svg" class="znak-news" alt=""></a>
             <a href="about.html"><div class="zagolovok-slovo">About</div></a>
@@ -22,7 +24,33 @@
                 </div>
             </div>
             
-            <img src="images/menu.png" alt="" class="menu_znak">
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            ABOUT
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            SUBMIT A STORY
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            Become a contributor
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__burger-btn" id="burger">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </header>
 
