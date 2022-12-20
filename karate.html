@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/createAccount.css">
-    <title>Create new account</title>
+    <link rel="stylesheet" href="css/about.css">
+    <title>Karate</title>
 </head>
 <body>
     <div id="progress">
@@ -15,7 +15,7 @@
         <div class="asa">
             <img src="images/znakNews.svg" class="znak-news" alt="">
             <a href="about.html"><div class="zagolovok-slovo">About</div></a>
-            <div class="zagolovok-slovo-1">Channels</div>
+            <a href="channel.html"><div class="zagolovok-slovo-1">Channels</div></a>
         </div>
         
             <div class="search-bar">
@@ -34,14 +34,37 @@
     </header>
     <!----------------------------------------------------------------------------------------->
     <div id="div-pod-zogolovok"></div>
-    <h1>Create new account</h1>
-    <div class="avtorizatsya">
-        <input class="chetyryi-avtorizatsya" placeholder="Full name*" type="text">
-        <input class="chetyryi-avtorizatsya" placeholder="Email*" type="email">
-        <input class="chetyryi-avtorizatsya" placeholder="New password*" type="password">
-        <input class="chetyryi-avtorizatsya" placeholder="Confirm new password*" type="password">
-        <input type="submit" class="submit-account" value="Create new account">
+    <div class="glavnaya-novost">
+        <img src="images/IlzeVanDerMerwe_KidsKickingCancer-080.jpg" alt="" class="glavnaya-kartinka">
+        <div id="background-dlya-kartinok"></div>
+        <div class="osnovnyie-zagolovoki">
+            <h1 class="h1-zogolovok">
+                With karate, these kids are taking back their power from cancer
+            <div style="display: flex">
+                <div class="video-na-zagolovke">
+                    <img src="images/play.png" alt="" class="ikonka-play">
+                    <div class="vremya-video">01:00</div> 
+                </div>
+            </div>
+        </div>
     </div>
+    <!-------------------------------------TEXT---------------------------------------------------->
+    <div class="text-content">
+        <p>Cancer treatment can be debilitating, often taking an extreme toll on patients both physically and mentally. “The road to health often requires painful treatments,” Van Der Merwe says. Between operations, chemotherapy, radiation, and medication, it can result in kids losing out on their childhoods. But in the weekly karate classes, they learn the fundamentals of the martial art along with breathing and meditation techniques. “These exercises that we teach the kids can ease the pain through breathing in all the good stuff, the light,” Van Der Merwe says. “The breathing out represents pushing out that pain, fear and frustration.” </p>
+        <p>Kids Kicking Cancer focuses on three core values – peace, power, and purpose. Van Der Merwe is enabling kids to deal with the stress of illness and build their resilience. “Martial arts gives children the strength to fight back and feel like victors over their illness instead of victims,” she says. “When children are empowered they feel like they can overcome anything.” Through karate, they’re providing kids with the space and freedom to live beyond their illness.</p>
+    </div>
+    <!-------------------------------------COMMENTS---------------------------------------------------->
+    <div id = comment class="comments">
+        <div id="comments-js">
+            <img src="images/message.svg" alt="" class="comment-oblachko">
+            <span class="comment-comments">Comments</span>
+            <img src="images/svernut.png" alt="" id="svernut" onclick="comments_jss()">
+            <img src="images/razvernut.png" alt="" id="razvernut" onclick="comments_jss_2()">
+        </div>
+        <textarea name="" id="comment-textarea" cols="60" rows="1" placeholder="Type your comment here"></textarea>
+    </div>
+
+    <script src="javascript/mainPage.js"></script>
     <!-------------------------------------footer----------------------------------------------->
     <footer>
         <div style="display: flex">
