@@ -163,7 +163,7 @@ header {
     opacity: 1;
 }
 #follow-link {
-    margin-left: 80%;
+    margin-left: 73%;
 }
 .follow {
     font-size: 16px;
@@ -178,7 +178,7 @@ header {
     font-size: 1rem;
     font-weight: 600;
     line-height: 2rem;
-    padding-left: 0.625rem;
+    padding-left: 1.63rem;
     padding-right: 0.625rem;
     align-items: center;
     cursor: pointer;
