@@ -6,7 +6,7 @@ body {
     font-family: 'proximanova',sans-serif;
     color: #fff;
     background: #000;
-    height: 1700px;
+    height: 800px;
     /* border-width: 1;
     border-style: solid;
     border-color: #e2e8f0; */
@@ -77,8 +77,8 @@ a img{
 .menu_znak {
     height: 34%;
     width: 2%;
-    margin-left: 83.3%;
-    margin-top: 0.2%;
+    margin-left: 84.3%;
+    margin-top: 0.5%;
     cursor: pointer;
     display: block;
     position: absolute;
@@ -254,6 +254,10 @@ footer {
 .google-assistant-appstore {
     cursor: pointer;
 }
+#google-appstore {
+    margin-left: 70%;
+    margin-right: 6%;
+}
 #google-assistant {
     margin-left: 73%; 
     margin-right: 1%
@@ -262,3 +266,208 @@ footer {
     opacity: .6;
 }
  
+
+@media (max-width: 768px){
+    header {
+        background-color: rgba(0,0,0,0.7);
+        width: 100%;
+        height: 65px;
+        display: block;
+        position: fixed;
+        z-index: 5;
+    }
+    .asa {
+        padding-top: 28px;
+        margin-right: 7.4%;
+        margin-left: 7.4%;
+        font-weight: bold;
+    }
+    .znak-news {
+        max-width: 20.7%;
+        height: auto;
+        position: absolute;
+    }
+    .zagolovok-slovo {
+        display: none;
+    }
+    .zagolovok-slovo-1 {
+        display: none;
+    }
+    .znak_iskat {
+        height: 23px;
+        width: 23px;
+        cursor: pointer;
+        margin-left: 80.4%;
+        display: block;
+        position: absolute;
+        margin-top: 2px;
+    }
+    .menu_znak {
+        display: none;
+        height: 28px;
+        width: 35px;
+        margin-left: 7%;
+        cursor: pointer;
+        position: absolute;
+    }
+    /*----------------------------------*/
+    
+    .container{
+        width: 21%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 70%;
+        padding: -2px;
+    }
+    .search-bar{
+        max-width: 90%;
+        background: rgba(255, 255, 255, 0.2);
+        display: flex;
+        align-items: center;
+        border-radius: 60px;
+    }
+    
+    .search-bar input{
+        background: transparent;
+        flex: 1;
+        border: 0;
+        outline: none;
+        /* padding: 3% 5.5%; */
+        font-size: 15px;
+        color:#ff4669;
+    }
+    .container::placeholder{
+        color: #a09799;
+    }
+    .search-bar button img{
+        width: 97%;
+    }
+    .search-bar button{
+        display: none;
+    }
+    
+    /*-------------------------------------------------*/
+ #div-pod-zogolovok {
+    height: 85px;
+    width: 100%;
+ }
+ h1  {
+    margin-left: 7.4%;
+    font-size: 60px;
+    margin-bottom: 44px;
+    margin-top: 64px;
+    font-weight: 700;
+    line-height: .8;
+ }
+ .avtorizatsya{
+    margin-left: 7.4%;
+    width: 50%;
+    flex-direction: column;
+    /* border-width: 1;
+    border-style: solid;
+    border-color: #e2e8f0; */
+ }
+ .email-i-password {
+    height: 46px;
+    background-color: #444444;
+    border-radius: 2px;
+    box-shadow: 0 3px 7px 0 rgb(0 0 0 / 40%);
+    color: #fff;
+    font-size: 15px;
+    width: 55%;
+    transition: background-color .1s ease,color .1s ease;
+    margin-bottom: 3%;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+}
+input:hover {
+    opacity: .7;
+}
+.email-i-password:focus {
+    background-color: #fff;
+    opacity: 1;
+    color: #000;
+}
+::placeholder { 
+    color: #fff;
+}
+.forgot-password {
+    display: block;
+    color: #fff;
+    font-weight: 500;
+    padding-bottom: 3%;
+    
+}
+.forgot-password:hover {
+    text-decoration: underline;
+}
+.submit-account {
+    height: 46px;
+    background-color: #ff4669;
+    border-radius: 2px;
+    font-size: 18px;
+    width: 20%;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.2;
+    display: block;
+}
+h3 {
+    margin-top: 5%;
+}
+.knopka-create-account {
+    display: block;
+    height: 46px;
+    border-radius: 2px;
+    border: #ff4669 solid 2px;
+    font-size: 18px;
+    width: 50%;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.knopka-create-account div {
+    padding-top: 7%;
+    text-align: center;
+}
+.knopka-create-account:hover {
+    background-color: #ff4669;
+}
+    
+      /* --------------------------------------footer----------------------------------------- */
+    footer {
+        margin-left: 7.4%;
+        margin-top: 6.5%;
+    }
+    .sotsyalnaya-set {
+        height: 30px;
+        width: 30px;
+        opacity: .3;
+        margin-top: 13px;
+    }
+    .sotsyalnaya-set:hover {
+        opacity: 1;
+    }
+    .footer-text {
+        padding-top: 0px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.25;
+        margin-left: 40%;
+    }
+    .footer-text p {
+        cursor: pointer;
+    }
+    .footer-text p:hover {
+        text-decoration: underline;
+    }
+    .nizhnaya-chast-footer {
+        margin-top: 2%;
+    }
+    .google-assistant-appstore {
+        cursor: pointer;
+        display: none;
+    }
+}
