@@ -3,7 +3,7 @@ body {
     font-family: 'proximanova',sans-serif;
     color: #fff;
     background: #000;
-    height: 1300px;
+    height: 1600px;
     /* border-width: 1;
     border-style: solid;
     border-color: #e2e8f0; */
@@ -71,8 +71,8 @@ header {
 .menu_znak {
     height: 34%;
     width: 2%;
-    margin-left: 83.3%;
-    margin-top: 0.2%;
+    margin-left: 84.3%;
+    margin-top: 0.5%;
     cursor: pointer;
     display: block;
     position: absolute;
@@ -133,7 +133,7 @@ header {
 }
 
 #div-pod-zogolovok {
-    height: 85px;
+    height: 105px;
     width: 100%;
  }
 
@@ -244,6 +244,10 @@ footer {
 .google-assistant-appstore {
     cursor: pointer;
 }
+#google-appstore {
+    margin-left: 70%;
+    margin-right: 6%;
+}
 #google-assistant {
     margin-left: 73%; 
     margin-right: 1%
@@ -251,4 +255,276 @@ footer {
 .google-assistant-appstore:hover {
     opacity: .6;
 }
+
+/* -------------------------------mobile-version------------------------------------------------ */
+
+@media (max-width: 768px){
+    header {
+        background-color: rgba(0,0,0,0.7);
+        width: 100%;
+        height: 85px;
+        display: block;
+        position: fixed;
+        z-index: 5;
+    }
+    .asa {
+        padding-top: 28px;
+        margin-right: 7.4%;
+        margin-left: 7.4%;
+        font-weight: bold;
+    }
+    .znak-news {
+        max-width: 20.7%;
+        height: auto;
+        position: absolute;
+    }
+    .zagolovok-slovo {
+        display: none;
+    }
+    .zagolovok-slovo-1 {
+        display: none;
+    }
+    .znak_iskat {
+        height: 23px;
+        width: 23px;
+        cursor: pointer;
+        margin-left: 80.4%;
+        display: block;
+        position: absolute;
+        margin-top: 2px;
+    }
+    .menu_znak {
+        display: none;
+        height: 28px;
+        width: 35px;
+        margin-left: 7%;
+        cursor: pointer;
+        position: absolute;
+    }
+    /*----------------------------------*/
+    
+    .container{
+        width: 21%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 70%;
+        padding: -2px;
+    }
+    .search-bar{
+        max-width: 90%;
+        background: rgba(255, 255, 255, 0.2);
+        display: flex;
+        align-items: center;
+        border-radius: 60px;
+    }
+    
+    .search-bar input{
+        background: transparent;
+        flex: 1;
+        border: 0;
+        outline: none;
+        /* padding: 3% 5.5%; */
+        font-size: 15px;
+        color:#ff4669;
+    }
+    .container::placeholder{
+        color: #a09799;
+    }
+    .search-bar button img{
+        width: 97%;
+    }
+    .search-bar button{
+        display: none;
+    }
+    
+    /*-------------------------------------------------*/
+    /*---------------------------------------*/
+
+.zagolovok-slovo-3{
+    font-size: 13px;
+    color: white;
+    padding-top: 70px;
+    padding-left: 135px;
+}
+
+#div-pod-zogolovok {
+    height: 105px;
+    width: 100%;
+ }
+
+
+.novostei-pro-sport {
+    margin-left: 7.4%;
+    /* margin-right: 7.4%; */
+    margin-top: 20px;
+}
+.kartinki-pro-sport {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.text-i-kartinka {
+    width: 80%;
+    height: 450px;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+.mnogo-kartinki-pro-sport {
+    max-width: 40%;
+    height: 450px;
+    object-fit: cover;
+    position: absolute;
+    cursor: pointer;
+}
+.text-na-kartinke {
+    width: 18%;
+    line-height: 1.25;
+    background: #000;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1.25;
+    position: absolute;
+    margin-top: 10%; 
+    margin-left: 1%;
+    display: inline;
+    cursor: pointer; 
+    background-color: rgba(0, 0, 0, 0);   
+}
+.text-i-kartinka:hover .mnogo-kartinki-pro-sport {
+    opacity: .38;
+    transition:  opacity 200ms linear;
+}
+.text-i-kartinka:hover .text-na-kartinke {
+    color: #fff;
+    background: none;
+    transition:  opacity 200ms linear;
+}
+
+/*-----------------------------------------------------*/
+    /*-------------------*/
+
+
+#progress {
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    height: 9%;
+    width: 5%;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  #progress-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #3f3b3b;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 26px;
+    color: #ccd0d4;
+  }
+    #div-pod-zogolovok {
+        height: 85px;
+        width: 100%;
+     }
+    .glavnaya-novost {
+        width: 100%;
+        height: 600px;
+    }
+    .glavnaya-kartinka {
+        max-width: 100%;
+        height: 500px;
+        position: absolute;
+        display: block;
+        object-fit: cover;
+    }
+    #background-dlya-kartinok{
+        width: 100%;
+        height: 550px;
+        position: absolute;
+        z-index: 1;
+        background: linear-gradient(to right,black 0%,rgba(0,0,0,0) 100%);
+    }
+    .osnovnyie-zagolovoki {
+        margin-left: 7.4%;
+        margin-top: 14%;
+        position: absolute;
+        z-index: 2;
+    }
+    .h1-zogolovok {
+        font-size: 29px;
+        width: 60%;
+    }
+    
+    .video-na-zagolovke {
+        margin-top: 2.4%;
+        height: 50px;
+        width: 120px;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.25px;
+        background-color: #ff4669;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    .ikonka-play {
+        width: 25px;
+        height: 25px;
+        margin-top: 10%;
+        margin-left: 15%;
+        float: left;
+    }
+    .vremya-video {
+        float: left;
+        margin-top: 13%;
+        margin-left: 12%;
+    }
+    .video-na-zagolovke:hover {
+        background-color: #565657;
+    }
+    
+    /*-------------------*/
+    
+      /* --------------------------------------footer----------------------------------------- */
+    footer {
+        margin-left: 7.4%;
+        margin-top: 4.5%;
+    }
+    .sotsyalnaya-set {
+        height: 30px;
+        width: 30px;
+        opacity: .3;
+        margin-top: 13px;
+    }
+    .sotsyalnaya-set:hover {
+        opacity: 1;
+    }
+    .footer-text {
+        padding-top: 0px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.25;
+        margin-left: 40%;
+    }
+    .footer-text p {
+        cursor: pointer;
+    }
+    .footer-text p:hover {
+        text-decoration: underline;
+    }
+    .nizhnaya-chast-footer {
+        margin-top: 2%;
+    }
+    .google-assistant-appstore {
+        cursor: pointer;
+        display: none;
+    }
+}
+
 
